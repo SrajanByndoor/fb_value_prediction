@@ -4,27 +4,22 @@
 
 ## Overview
 
-A Python project for collecting and analyzing football (soccer) match data from the Premier League. Currently focused on exploratory data analysis (EDA), with future goals of building predictive models for:
+A Python project for collecting and analyzing football match data from the Premier League. Currently focused on exploratory data analysis (EDA), with future goals of building predictive models for:
 
 - Match outcome prediction
 - Player transfer value estimation
 
-## Current Features
+## Features
 
 - Fetches match data from the football-data.org API
-- Caches API responses to avoid rate limiting
+- Caches API responses
 - Stores normalized match and team data in SQLite
-- Supports historical data collection (multiple seasons)
-- Provides training data extraction utilities for ML
+- Historical data collection (multiple seasons)
 
 ## Installation
 
 1. Clone the repository
-2. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+2. Create a virtual environment
 3. Install dependencies:
    ```bash
    pip install requests
@@ -36,6 +31,5 @@ A Python project for collecting and analyzing football (soccer) match data from 
 football_project/
 ├── football_cache.py   # Main module: API fetching, caching, database operations
 ├── test_api.py         # Demo script for data collection
-├── football_data.db    # SQLite database (generated)
 └── venv/               # Python virtual environment
 ```
